@@ -1,9 +1,58 @@
-/*Some necessary adjustments*/
-h1, body, html, main {
+/* Some necessary adjustments */
+h1,
+body,
+html,
+main {
   margin: 0;
 }
+
 /*Import the font and set the default size*/
 html {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px
+}
+
+.conteiner-title {
+  background-image: url(../images/soup.jpg);
+  display: flex;
+  justify-content: center;
+  padding: 200px 0;
+  color: white;
+  font-size: 48px;
+
+}
+
+.conteiner {
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.subtitle {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.text {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.ingredients-list li {
+  line-height: 22px;
+  list-style-type: "– "
+}
+
+.directions-list {
+  list-style-type: none;
+  counter-reset: item;
+}
+
+.directions-list li {
+  counter-increment: item;
+  line-height: 22px;
+}
+
+.directions-list li:before {
+  content: counter(item) ') ';
+
 }
